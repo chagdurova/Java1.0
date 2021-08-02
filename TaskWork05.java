@@ -1,12 +1,10 @@
 package com.Dasha.idea;
 import java.util.Scanner;
-
 /*
 Ввести 2 числа с клавиатуры, затем один из символов ‘+’, ‘-’, ‘*’ или ‘/’.
 В зависимости от символа вывести в консоль результат выполнения соответствующей арифметической операции.
  */
-
-public class TAskWork5 {
+public class TaskWork05 {
     public static void main(String[] args) {
         double num1;
         double num2;
@@ -17,7 +15,7 @@ public class TAskWork5 {
         num1 = reader.nextDouble();
         num2 = reader.nextDouble();
         System.out.print("Введите оператор:  ");
-        op = reader.next().charAt(0);
+        operation = reader.next().charAt(0);
         switch (operation) {
             case '+':
                 result = num1 + num2;
@@ -38,4 +36,3 @@ public class TAskWork5 {
         System.out.printf("Ответ: " + result);
     }
 }
-
